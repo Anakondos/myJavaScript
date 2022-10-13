@@ -1,5 +1,5 @@
 //
-/object.keys()
+//object.keys()
 //object.values()
 //object.entries()
 
