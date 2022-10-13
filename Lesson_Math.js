@@ -5,7 +5,7 @@ let arr = [28, 16, 37, 21, 17, 27];
 console.log(Math.min(...arr));
 console.log(Math.max(...arr));
 
-// pow
+// -------pow----------
 //Math.pow(num, power)
 console.log(Math.pow(2, 4))
 
