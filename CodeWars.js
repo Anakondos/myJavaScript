@@ -84,3 +84,13 @@
 // }
 
 // console.log(yearDays(-64));
+
+//---------revers number ----------
+
+const reversNum = (n) => {Math.sign(n) * parseInt(String(n).split('').reverse().join(''))};
+
+
+// function reversNum(n){
+//         return Math.sign(n) * parseInt(String(n).split('').reverse().join(''))}
+
+console.log(reversNum(-120));
