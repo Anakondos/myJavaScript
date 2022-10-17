@@ -11,6 +11,10 @@ Object.assign(testObj, obj, newObj);
 
 console.log(testObj);
 
+for (let key in obj) {
+    console.log(`key ${key} ---${obj[key]}`);
+}
+
 
 
 
