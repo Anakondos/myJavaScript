@@ -2,19 +2,24 @@
 //           key = string
 const obj = {a: 'a', b: 123, c: true, d: [1, 2, 3, 4]};
 
-let newObj = new Object(); // - используеться с конструктором
+// let newObj = new Object(); // - используеться с конструктором
 
-newObj = {"ab": 'a', bb: 123, 'cb': true, db: {1: 1, 2: 2, 3: 3, 4: 4}};
-const testObj = {};
+// newObj = {"ab": 'a', bb: 123, 'cb': true, db: {1: 1, 2: 2, 3: 3, 4: 4}};
+// const testObj = {};
 
-Object.assign(testObj, obj, newObj);
+// Object.assign(testObj, obj, newObj);
 
-console.log(testObj);
+// console.log(testObj);
 
-for (let key in obj) {
-    console.log(`key ${key} ---${obj[key]}`);
-}
+// for (let key in obj) {
+//     console.log(`key ${key} ---${obj[key]}`);
+// }
 
+// ----------- Methods -----------
 
+// Object.keys();
+// Object.values();
+// Object.entries();
 
+console.log(Object.keys(newObj));
 
