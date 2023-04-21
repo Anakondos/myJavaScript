@@ -87,10 +87,128 @@
 
 //---------revers number ----------
 
-const reversNum = (n) => {Math.sign(n) * parseInt(String(n).split('').reverse().join(''))};
+// const reversNum = (n) => {Math.sign(n) * parseInt(String(n).split('').reverse().join(''))};
 
 
 // function reversNum(n){
 //         return Math.sign(n) * parseInt(String(n).split('').reverse().join(''))}
 
-console.log(reversNum(-120));
+// console.log(reversNum(-120));
+//-----------------------------------------------------------
+// function calculator(a,b,sign){
+
+// let result = 0;  
+// if (typeof a != 'number' || typeof b != 'number') {
+//   return "unknown value";
+// }
+// if(sign.match(/\*\-\/\+/)) {
+ 
+// return "unknown value";
+
+// } else if (sign == "+")  {
+//   console.log(a + b);  
+//   return result = a + b;
+// } else if (sign == "-") {
+//   console.log(a - b);  
+//   return a - b;
+// } else if (sign == "/") {
+//   console.log(a / b);   
+//   return a / b;
+// } else if (sign == "*") {
+//   console.log(a * b);   
+//   return a * b;
+// } else {
+//   return "unknown value";
+// }
+
+// }
+
+//   console.log(calculator(1,2, "/"));
+
+//=========================================================
+  // let n = 5;
+  
+  // console.log(x = typeof n != 'number');
+
+  // function outed(meet, boss){
+  //   meet[boss] *= 2;
+  //   let avgRating = (Object.values(meet).reduce((sum,el) => sum + el)) / (Object.values(meet).length);
+  //   return (avgRating <= 5) ? 'Get Out Now!' : 'Nice Work Champ!';
+  // }
+
+  //=======================================================
+
+//   function isSortedAndHow(array) {
+//     let currentArr = array.join();
+    
+//     const isAscending = (array) => { 
+//       console.log("currentArr in isAscending" + currentArr); //5,3
+//       return (currentArr == array.sort((a,b) => a - b).join());
+//       }
+
+
+//       // console.log(array.sort((a,b) => a - b).join()); //3,5
+// //-----------------------------------------------------
+     
+//       const isDescending = (array) => {
+//         console.log("currentArr in isDescending" + currentArr);
+//         return (currentArr == array.sort((a,b) => b - a).join());
+//       }
+     
+//      return isAscending(array) ? "yes, ascending" : isDescending(array) ? "yes, descending" : "no";
+  
+//   }
+
+//   const array = [6,3];
+//   console.log(isSortedAndHow(array));
+
+
+  // let newArr = array.join() == array.sort((a,b) => a - b).join();
+
+  // console.log(newArr);
+
+//============================
+
+let s = 'abamdkoghbisjaodobe'
+
+let target = 'adb'
+
+//abamdkoghb
+//amdkoghb
+//aodobe
+//  const arr = [];
+
+//  let idx = s.indexOf(target[0]);
+
+//  while(idx != -1) {
+//     let idx2 = s.indexOf(target[1], idx + 1)
+//     while (idx2 != -1) {
+//         let idx3 = s.indexOf(target[2], idx2 + 1);
+
+//        if(idx3 != -1) {
+//           arr.push(s.substring(idx, idx3 + 1))
+//         }
+//         break;
+//     }
+//       idx = s.indexOf(target[0], idx + 1);
+//  }
+
+//  console.log(arr.sort((a,b) => a.length - b.length)[0]);
+ //=========================================================
+/*
+Definition:- A word is an anagram of another word if they are using the same letters with the same quantity, but arranged differently. 
+PROBLEM:- write a function that checks if two provided strings are anagrams of each other; letter casing shouldn’t matter. 
+Also, consider only characters, not spaces or punctuation. For Example: anagram('fried','fired') 
+// true; anagram('gainly', 'lying') //true; anagram('listen', 'bye')  // false;
+*/
+ function anagram(word1, word2) {
+    let arr1 = word1.split('').sort().join();
+    let arr2 = word2.split('').sort().join();
+
+  return arr1 == arr2;
+ }
+
+ console.log(anagram('fried','fired'));
+
+
+ 
